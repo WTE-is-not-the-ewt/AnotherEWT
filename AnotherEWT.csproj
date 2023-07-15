@@ -33,6 +33,10 @@
 		<Version>1.0.1</Version>
 		<Authors>WTE</Authors>
 		<PackageIcon>WTE.png</PackageIcon>
+		<PackageProjectUrl>https://github.com/WTE-is-not-the-ewt/AnotherEWT</PackageProjectUrl>
+		<DefaultLanguage>zh-cn</DefaultLanguage>
+		<PackageCertificateThumbprint>E77560C895F6317B7EDEB7860B9DADD2ED5EEEEE</PackageCertificateThumbprint>
+		<AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-maccatalyst|AnyCPU'">
@@ -73,7 +77,7 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\wte.png" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
@@ -94,7 +98,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Update="Resources\AppIcon\WTE.png">
+	  <None Update="Resources\AppIcon\wte.png">
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>
 	  </None>
