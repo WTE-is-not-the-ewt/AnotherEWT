@@ -1,1 +1,5 @@
-{"latest_version": "1.0.1","condition": "Success","more_info": "This version of AnotherEWT can access all API correctly"}
+{
+  "latest_version": "1.0.1.0",
+  "condition": "Warning",
+  "more_info": "Another EWT尚未编写完成，可能会有一些问题。"
+}
