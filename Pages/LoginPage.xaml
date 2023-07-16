@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnotherEWT.Pages.LoginPage"
+             Title="登录你的EWT账户">
+    <Grid>
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center" MaximumWidthRequest="800">
+            <Label
+                Text="我们需要记录你的登录cookie来访问后端API"
+                Padding="10"
+                Margin="10"
+                FontSize="Medium"
+                ></Label>
+            <Label
+                Text="由于ewt的Token算法的限制，我们需要你在ewt的网页中操作，在你登录后，我们会记录你的cookie。在cookie失效前，你仅需登录这一次。"
+                Padding="10"
+                FontSize="Small"
+                Margin="10"
+                ></Label>
+            <WebView x:Name="webpage" MinimumHeightRequest="314" MinimumWidthRequest="302" HorizontalOptions="Center" Navigated="webpage_Navigated" Margin="20"/>
+            <StackLayout Margin="5" Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="刷新页面" Margin="5" Clicked="Button_Clicked"/>
+                <Button Text="强制应用样式" Margin="5" Clicked="Button_Clicked_1"/>
+            </StackLayout>
+            <Button
+                Text="确认你登录完成后，点击此按钮"
+                FontSize="Medium"
+                VerticalOptions="Center"
+                Margin="20"
+                Clicked="Button_Clicked_2" 
+            />
+        </StackLayout>
+    </Grid>
+</ContentPage>

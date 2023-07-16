@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
+﻿using System.Text.Json;
 
 namespace AnotherEWT.Tools
 {
@@ -36,7 +31,7 @@ namespace AnotherEWT.Tools
     {
         private string infoURL = "https://raw.githubusercontent.com/WTE-is-not-the-ewt/AnotherEWT/master/Update/Info.json";
 
-        public string InfoURL { get => infoURL;}
+        public string InfoURL { get => infoURL; }
 
         public async Task<JsonInfoWrapper> Check()
         {
@@ -47,7 +42,7 @@ namespace AnotherEWT.Tools
                 string response = await client.GetStringAsync(infoURL);
                 if (response != null)
                 {
-                    JsonInfo info = JsonSerializer.Deserialize<JsonInfo> (response);
+                    JsonInfo info = JsonSerializer.Deserialize<JsonInfo>(response);
                     wrapper.Info = info;
                 }
             }
