@@ -1,4 +1,5 @@
 using System.Net;
+using AnotherEWT.Tools;
 using CommunityToolkit.Maui.Alerts;
 
 namespace AnotherEWT.Pages;
@@ -40,7 +41,7 @@ public partial class LoginPage : ContentPage
 
     private async void Button_Clicked_2(object sender, EventArgs e)
     {
-        usercookie =await webpage.EvaluateJavaScriptAsync("document.cookie");
+        Configs.current.savedCookie = await webpage.EvaluateJavaScriptAsync("document.cookie");
         await Navigation.PopAsync();
     }
 }

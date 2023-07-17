@@ -1,3 +1,4 @@
+using AnotherEWT.Tools;
 using RestSharp;
 
 namespace AnotherEWT.Pages;
@@ -5,10 +6,10 @@ namespace AnotherEWT.Pages;
 public partial class UserInfo : ContentPage
 {
     string c;
-	public UserInfo(string usercookie)
+	public UserInfo()
 	{
 		InitializeComponent();
-        c = usercookie;
+        c = Configs.current.savedCookie;
 	}
 
 	private async Task<string> GetInfo(string token)

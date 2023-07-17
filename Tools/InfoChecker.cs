@@ -29,7 +29,7 @@ namespace AnotherEWT.Tools
 
     public class InfoChecker
     {
-        private string infoURL = "https://raw.githubusercontent.com/WTE-is-not-the-ewt/AnotherEWT/master/Update/Info.json";
+        private string infoURL = Configs.current.infoGetUrl;
 
         public string InfoURL { get => infoURL; }
 
