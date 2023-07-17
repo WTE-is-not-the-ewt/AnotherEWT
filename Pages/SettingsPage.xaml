@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnotherEWT.Pages.SettingsPage"
+             Title="设置">
+    <VerticalStackLayout>
+        <Label 
+            Text="以下是一些Another EWT的设置"
+            VerticalOptions="Center" 
+             FontSize="32"
+            HorizontalOptions="Center" />
+        <StackLayout Padding="10, 0">
+            <Frame Margin="5">
+                <Frame.Shadow>
+                    <Shadow Brush="Black"
+                Offset="10,10"
+                Opacity="0.8" />
+                </Frame.Shadow>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                    <Button
+                x:Name="LoginButton"
+               Margin="30"
+                Text="立即重新登录"
+                Clicked="LoginButton_Clicked"
+                HorizontalOptions="Start"/>
+                    <Button
+                x:Name="VersionCheckButton"
+               Margin="30"
+                Text="检查版本更新"
+                Clicked="VersionCheckButton_Clicked"
+                HorizontalOptions="Start"/>
+                </StackLayout>
+
+
+            </Frame>
+
+            <Frame Margin="5">
+                <Frame.Shadow>
+                    <Shadow Brush="Black"
+                Offset="10,10"
+                Opacity="0.8" />
+                </Frame.Shadow>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="版本文件检查地址(推荐GitHub Proxy):"/>
+                    <StackLayout Orientation="Vertical" RadioButtonGroup.GroupName="VersionURL">
+                        <RadioButton CheckedChanged="RadioButton_CheckedChanged"  Content="Github"/>
+                        <RadioButton CheckedChanged="RadioButton_CheckedChanged"  Content="Github Proxy"/>
+                    </StackLayout>
+
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

@@ -42,6 +42,7 @@ public partial class LoginPage : ContentPage
     private async void Button_Clicked_2(object sender, EventArgs e)
     {
         Configs.current.savedCookie = await webpage.EvaluateJavaScriptAsync("document.cookie");
+        Configs.current.LastCookieRefreshTime = DateTime.Now;
         await Navigation.PopAsync();
     }
 }

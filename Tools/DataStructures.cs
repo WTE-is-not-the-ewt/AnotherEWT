@@ -39,7 +39,7 @@ namespace AnotherEWT.Tools
         /// <summary>
         /// 
         /// </summary>
-        public int now { get; set; }
+        public long now { get; set; }
         /// <summary>
         /// 
         /// </summary>
@@ -51,14 +51,14 @@ namespace AnotherEWT.Tools
         /// <summary>
         /// 
         /// </summary>
-        public int temporaryExpireTime { get; set; }
+        public long temporaryExpireTime { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public int source { get; set; }
+        public long source { get; set; }
     }
 
-    public class GetUserData
+    public class FullUserData
     {
         /// <summary>
         /// 
