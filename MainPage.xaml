@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Another EWT"
+             Loaded="ContentPage_Loaded"
+             NavigatedTo="ContentPage_NavigatedTo"
              x:Class="AnotherEWT.MainPage">
 
     <ScrollView>
@@ -9,31 +12,28 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
             <Label
-                Text="Hello, World!"
+                Text="Another EWT"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
+                x:Name="UserName"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Welcome to .NET Multi-platform App UI"
+                x:Name="UserId"
+                Text="你的UserId"
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 FontSize="18"
                 HorizontalOptions="Center" />
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+            <StackLayout Orientation="Horizontal" Margin="20" VerticalOptions="Center" HorizontalOptions="Center">
+                <Button Text="我的课程"
+                        x:Name="GoToLessons"
+                        />
+                <Button Text="应用设置"
+                        Clicked="Button_Clicked"
+                        />
+            </StackLayout>
 
         </VerticalStackLayout>
     </ScrollView>

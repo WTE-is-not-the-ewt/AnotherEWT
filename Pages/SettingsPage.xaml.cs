@@ -32,4 +32,10 @@ public partial class SettingsPage : ContentPage
     {
         VersionChecker.CheckAppVersion(this);
     }
+
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+        Launcher.OpenAsync("https://github.com/WTE-is-not-the-ewt/AnotherEWT");
+
+    }
 }
