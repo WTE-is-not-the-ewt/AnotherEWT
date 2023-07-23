@@ -21,17 +21,17 @@ Use AnotherEWT and HAVE FUN!
 
 Chinese ver:
 
-�������ţ���һ��EWT���ǿ��ܵġ�
+我们相信，另一种EWT，是可能的。
 
-AnotherEWT��һ��������EWT�ͻ��ˡ� ���ǲ�ϲ��ewt360.com�ĳ�ª���û�������ƣ�����EWT��û�и�����ѡ��Ļ��ᡣ EWT�Ĵ���Ҳ�ǳ���������ǳ���⡣
+AnotherEWT是一个第三方EWT客户端。 我们不喜欢ewt360.com的丑陋的用户界面设计，但是EWT并没有给我们选择的机会。 EWT的代码也非常薄弱。这非常糟糕。
 
-��ˣ�����Ӧ����һЩ�ı䡣
+因此，我们应该做一些改变。
 
-����ʹ��.NET Maui��֧������ƽ̨��Android(API >= 21������˵��Android 5.1������ʹ��API 33����Windows��Windows 10.0.17763���ϰ汾���� 
-ͨ��Maui�е�Webview�����ǲ��������û�cookie�����������ı����豸�У��� ��ʹ�����ǵ���һЩ������EWT�ķ������ҵ��ĺ��API����μ�Headers.cs����Ȼ�������ǵ��û��������Ը����۵ķ�ʽ��ʾ���ǡ�
+我们使用.NET Maui来支持两个平台：Android(API >= 21，或者说是Android 5.1，但荐使用API 33）和Windows（Windows 10.0.17763以上版本）。 
+通过Maui中的Webview，我们捕获您的用户cookie（仅储在您的本地设备中）， 并使用它们调用一些我们在EWT的服务中找到的后端API（请参见Headers.cs），然后在我们的用户界面中以更美观的方式显示它们。
 
-���ǲ����ռ��κ����ĸ�����Ϣ������User-ID��School-ID�ȡ�
+我们不会收集任何您的个人信息，例如User-ID、School-ID等。
 
-������WTE��ȫ����WTE is not The Ewt��
-�����WTE����Ȥ�����Լ������ǣ���ͨ�����ǵ��Ŷӳ�Ա��������ϵ�� 
-��ӭ�ύPull requests��
+我们是WTE，全名是WTE is not The Ewt。
+如果对WTE感兴趣，可以加入我们，并通过我们的团队成员与我们联系。 
+欢迎提交Pull requests。
